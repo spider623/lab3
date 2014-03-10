@@ -36,6 +36,9 @@
         </form>
             <%! String warning=""; %>
             <%
+                String opinion=null;
+                session.setAttribute("opinoion", opinion);
+    
             String msg =request.getParameter("msg");
             if ( msg != null){
                 if(msg.equals("1")){

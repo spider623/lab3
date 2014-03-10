@@ -25,7 +25,7 @@ String pwd=(String) request.getParameter("pwd");
 student me =proc.getStudent(usn,pwd);
 if (me!=null){
         session.setAttribute("student", me);
-        response.sendRedirect("welcome.jsp");
+        response.sendRedirect("poll.jsp");
     }
 else response.sendRedirect("login.jsp?msg=1");
 %>

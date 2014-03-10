@@ -20,16 +20,19 @@ public class processor {
      * @return
      */
     public student getStudent(String usn, String pwd){
-        if (usn.equals("user") && pwd.equals("user")){
+        String user[]={"23", "223", "65", "231", "764", "885"};
+        String pass[]={"23", "223", "65", "231", "764", "885"};
+        for (int i=0; i<5; i++){
+        if (usn.equals(user[i]) && pwd.equals(pass[i])){
             student s = new student();
-            s.setName("Simos Katsiaris");
+            s.setName(user[i]);
             s.setUsn(usn);
             s.setPwd(pwd);
             s.setGpa(190);
             s.setEcts(12);
             return s;
         }
+        }
     return null;
 }
-
 }
